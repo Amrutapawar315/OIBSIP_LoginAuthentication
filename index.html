@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Authentication System</title>
+</head>
+<body>
+
+<div id="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
+
+        <button type="button" onclick="login()">Login</button>
+        <button type="button" onclick="showRegistrationForm()">Register</button>
+    </form>
+
+    <form id="registrationForm" style="display: none;">
+        <h2>Register</h2>
+        <label for="newUsername">New Username:</label>
+        <input type="text" id="newUsername" required><br>
+
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword" required><br>
+
+        <label for="newemailid">New Email Id:</label>
+        <input type="emailid" id="newemailid" required><br>
+
+        <label for="date of birth">Date of Birth:</label>
+        <input type="date of birth" id="date of birth" required><br>
+
+
+        <button type="button" onclick="register()">Create Account</button>
+    </form>
+
+    <p id="error"></p>
+
+    <div id="securedPage" style="display: none;">
+        <h2>Secured Page</h2>
+        <p>Welcome! You are now logged in.</p>
+        <button onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

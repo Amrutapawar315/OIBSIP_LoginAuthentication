@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 30px;
+    background-color: black;
+}
+
+#container {
+    text-align: center;
+    border: 1px solid #717377;
+    padding: 30px;
+    border-radius: 16px;
+    background: #f0f0f0;
+    box-shadow: 0px 3px 15px rgba(0, 3, 8, 0.5);
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+#securedPage {
+    margin-top: 20px;
+}
+ 
